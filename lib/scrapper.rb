@@ -41,7 +41,7 @@ def perform(page)
     array_price = crypto_chiffres(page) 
     transition_hash = into_an_hash(array_names, array_price)
     final_tab = rearrange_big_hash(transition_hash)
-    puts final_tab.inspect
+    return final_tab.inspect
 end
 
  perform(page)
